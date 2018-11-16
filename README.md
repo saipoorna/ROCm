@@ -504,6 +504,10 @@ sudo yum autoremove rocm-dkms
 
 ### Known Issues / Workarounds
 
+#### OpenCL conformance math & integer_ops failure is observed with large number of command queues, passes with GPU_MAX_COMMAND_QUEUES="200" set 
+
+#### TF perf drop on Vega20 has been observed, Rootcause identified. Fix is in progress
+
 #### HipCaffe is supported on single GPU configurations
 
 #### The ROCm SMI library calls to rsmi_dev_power_cap_set() and rsmi_dev_power_profile_set() will not work for all but the first gpu in multi-gpu set ups.
